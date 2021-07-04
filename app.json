@@ -5,14 +5,14 @@
   "keywords": [
     "telegram",
     "userbot",
-	"UserLand",
+	"alpha",
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/TheC0ala/UserLand",
+  "repository": "https://github.com/goqerti/alphauserbot",
   "website":   "",
-  "success_url": "https://t.me/userlandsup",
+  "success_url": "https://t.me/alphauserbot",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Fork təqdim etməyiniz vəziyyətində repo URL-nizi buraya əlavə edin. Varsayılan olaraq öz repo adresimiz yazılmışdır.",
-      "value": "https://github.com/TheC0ala/UserLand",
+      "value": "https://github.com/goqerti/alphauserbot",
       "required": true
     },
     "COUNTRY": {
@@ -177,7 +177,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Varsayılan profil biosu.",
-      "value": "@UserLandResmi",
+      "value": "@AlphaUserBot",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -217,7 +217,7 @@
     },
     "PAKET_ISMI": {
       "description": "Dızla komandası paket adını yazın. Varsayılan olaraq @UserLandResmi'dir",
-      "value": "@UserLandResmi",
+      "value": "@AlphaUserBot paketi",
       "required": false
     },
     "AVTO_QATILMA": {
