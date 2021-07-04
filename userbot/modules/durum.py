@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA - by K I R I T O
 
 from userbot import CMD_HELP, ASYNC_POOL, tgbot, SPOTIFY_DC, G_DRIVE_CLIENT_ID, lastfm, LYDIA_API_KEY, YOUTUBE_API_KEY, OPEN_WEATHER_MAP_APPID, AVTO_PP, REM_BG_API_KEY, OCR_SPACE_API_KEY, PM_AUTO_BAN, BOTLOG_CHATID, USERLAND_VERSION
 from userbot.events import register
@@ -34,7 +34,7 @@ async def durums(event):
     await event.edit(f"""
 **Python {LANG['VERSION']}:** `{python_version()}`
 **TeleThon {LANG['VERSION']}:** `{version.__version__}` 
-**UserLand {LANG['VERSION']}:** `{USERLAND_VERSION}`
+**ALPHA {LANG['VERSION']}:** `{ALPHA_VERSION}`
 
 **{LANG['PLUGIN_COUNT']}:** `{len(CMD_HELP)}`
 
