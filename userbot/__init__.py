@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License
 
-# UserLand - by BABAŞ #
+# Alpha User Bot #
 """ UserBot hazırlanışı """
 
 import os
@@ -30,11 +30,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @UserLandResmi - %(levelname)s - %(message)s",
+        format="%(asctime)s - @Alphasupportaz - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @UserLandResmi - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @Alphasupportaz - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -53,14 +53,14 @@ if CONFIG_CHECK:
     quit(1)
 
 # Bot'un dili
-LANGUAGE = os.environ.get("LANGUAGE", "DEFAULT").upper()
+LANGUAGE = os.environ.get("LANGUAGE", "AZ").upper()
 
 if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
-    LOGS.info("Namelum dil yazıdnız buna göre DEFAULT dil işledilir.")
-    LANGUAGE = "DEFAULT"
+    LOGS.info("Namelum dil yazıdnız buna göre AZ dil işledilir.")
+    LANGUAGE = "AZ"
     
 # UserLand Version
-USERLAND_VERSION = "v1.2"
+ALPHA_VERSION = "v1.2"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
@@ -88,7 +88,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Yenileme üçün repo linki
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/thec0ala/userland.git")
+    "https://github.com/Goqerti/AlphaUserBot.git")
 
 # Konsol gündeliy
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -115,7 +115,7 @@ if not WARN_MODE in ["gmute", "gban"]:
 # Qaleriya
 QALERIYA_VAXT = int(os.environ.get("QALERIYA_VAXT", 60))
 
-# UserLand
+# AlphaUserBot
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
 
@@ -185,14 +185,14 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "@UserLandResmi Paketi")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "@AlphaUserBot Paketi")
 
 # Avto qatılma
 AVTO_QATILMA = sb(os.environ.get("AVTO_QATILMA", "True"))
 
 # Patternler
 PATTERNS = os.environ.get("PATTERNS", ".;!,")
-WHITELIST = get('https://raw.githubusercontent.com/thec0ala/userland/main/whitelist.json').json()
+WHITELIST = get('https://raw.githubusercontent.com/goqerti/alphauserbot/main/whitelist.json').json()
 
 # CloudMail.ru ve MEGA.nz 
 if not os.path.exists('bin'):
@@ -280,8 +280,8 @@ def butonlastir(sayfa, moduller):
 with bot:
     if AVTO_QATILMA:
         try:
-            bot(JoinChannelRequest("@UserLandSup"))
-            bot(JoinChannelRequest("@UserLandResmi"))
+            bot(JoinChannelRequest("@Alphasupportaz"))
+            bot(JoinChannelRequest("@AlphaUserBot"))
         except:
             pass
 
@@ -293,21 +293,21 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən` @UserLandResmi`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə UserLand qura bilərsən Kanala bax` @UserLandResmi')
+                await event.reply(f'`Salam mən` @AlphaUserBot`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə Alpha User Bot qura bilərsən Dəstək qrupumuza gəl` @Alphasupportaz')
             else:
-                await event.reply(f'`UserLand İşləyir✨`')
+                await event.reply(f'`Alpha User Bot İşləyir🔥`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@UserLandResmi":
+            if event.query.user_id == uid and query == "@AlphaUserBot":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Zəhmət olmasa sadəcə .kömek ilə kömək istəyin.",
-                    text=f"**UserLand Əla İşləyir ✨** [UserLand](https://t.me/userlandresmi) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**Alpha Əla İşləyir 🔥** [Alpha User Bot](https://t.me/alphauserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -323,14 +323,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@UserLandResmi",
-                    text="""@UserLandResmi işlədin
+                    "@AlphaUserBot",
+                    text="""@AlphaUserBot işlədin
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə etməssiniz! Altdakı GitHub adresində bütün qurulum detayları var""",
                     buttons=[
-                        [custom.Button.url("Kanal", "https://t.me/UserLandResmi"), custom.Button.url(
-                            "Qrup", "https://t.me/UserLandSup")],
+                        [custom.Button.url("Kanal", "https://t.me/alphauserbot"), custom.Button.url(
+                            "Qrup", "https://t.me/alphasupportaz")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/thec0ala/userland")]
+                            "GitHub", "https://github.com/goqerti/alphauserbot")]
                     ],
                     link_preview=False
                 )
@@ -339,11 +339,11 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənkm mesajlarımı düzəltməyə çalışma! Özünə bir @UserLandResmi qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @AlphaUserBot qur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**UserLand Əla İşləyir✨** [UserLand](https://t.me/UserLandResmi) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"**Alpha Əla İşləyir🔥** [Alpha User Bot](https://t.me/Alphauserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -351,7 +351,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənkm mesajlarımı düzəltməyə çalışma! Özünə bir @UserLandResmi qur..", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @AlphaUserBot qur..", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -371,7 +371,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"komut\[(.*)\[(\d*)\]\]\((.*)\)")))
         async def komut(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənkm mesajlarımı düzəltməyə çalışma! Özünə bir @UserLandResmi qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @AlphaUserBot qur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))
@@ -412,7 +412,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         LOGS.info(
             "Botunuzda inline modu deaktiv edildi. "
             "Aktivleşdirmek üçün bir bot token yazın ve inline modunu açın. "
-            "Eger bunnan başqa probleminiz varsa bize yazın."
+            "Eger bunnan başqa probleminiz varsa bize yazın @Alphasupportaz."
         )
 
     try:
@@ -479,7 +479,7 @@ ZALG_LIST = [[
 ],
     [
     " ̍", " ̎", " ̄", " ̅", " ̿", " ̑", " ̆", " ̐", " ͒", " ͗",
-    " ͑", " ̇", " ̈", " ̊", " ͂", " ̓", " ̈́", " ͊", " ͋", " ͌",
+    " ͑", " ̇", " ̈", " ̊", " ͂", " ̓", " ̈́", " ͊", " ͋", " ͌",
     " ̃", " ̂", " ̌", " ͐", " ́", " ̋", " ̏", " ̽", " ̉", " ͣ",
     " ͤ", " ͥ", " ͦ", " ͧ", " ͨ", " ͩ", " ͪ", " ͫ", " ͬ", " ͭ",
     " ͮ", " ͯ", " ̾", " ͛", " ͆", " ̚"
@@ -487,8 +487,8 @@ ZALG_LIST = [[
     [
     " ̕",
     " ̛",
-    " ̀",
-    " ́",
+    " ̀",
+    " ́",
     " ͘",
     " ̡",
     " ̢",
