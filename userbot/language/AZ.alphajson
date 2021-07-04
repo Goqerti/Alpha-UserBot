@@ -2,7 +2,7 @@
     "__alphaJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "az",
-    "AUTHOR": "Babaş",
+    "AUTHOR": "Alpha",
     "STRINGS": {
         "__plugin": {
             "REPLY_FOR_PORT": "`Zəhmət olmasa Plugin-Port üçün bir fayla cavab yazın`",
