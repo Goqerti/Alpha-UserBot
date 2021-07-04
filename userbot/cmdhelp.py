@@ -1,15 +1,15 @@
-# Copyright (C) 2020 by BABAŞ.
+# Copyright (C) 2020 by ALPHA.
 #
 # Licensed under the GPL-3.0 License;
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# AlphaUserBot - Sirvhan
 from userbot import PATTERNS, CMD_HELP, CMD_HELP_BOT
 
 class CmdHelp:
     """
-    TGUSERBOT
+    ALPHAUSERBOT
     """
 
     FILE = ""
