@@ -1,5 +1,5 @@
-MESAJ="UserLand String"
-MESAJ+="\nTelegram: @UserLandResmi"
+MESAJ="Alpha String"
+MESAJ+="\nTelegram: @AlphaResmi"
 pkg upgrade
 clear
 echo -e $MESAJ
@@ -15,9 +15,9 @@ pip install bs4
 clear
 echo -e $MESAJ
 echo "Fayl yazılır..."
-curl "https://raw.githubusercontent.com/thec0ala/userland/main/ddq.py" --output "ddq.py"
+curl "https://raw.githubusercontent.com/Goqerti/AlphaUserBot/main/alpha.py" --output "alpha.py"
 clear
 echo -e $MESAJ
 echo "Qurulum Bitdi! İndi String Ala Bilərsiz."
 clear
-python ddq.py
+python alpha.py
