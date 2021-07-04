@@ -2,7 +2,8 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
-#
+
+#AlphaUserBot
 
 
 
@@ -34,7 +35,7 @@ DIZCILIK_STR = [
     "Bu sticker artıq mənimdir!",
     "Bunu stickerlərimə əlavə etməliyəm... ",
     "Sticker həps edilir...",
-    "Yess yeni sticker!",
+    "Mən bir sticker oğrusuyam stickerin məndədi ;D!",
     "Nə gözəl stickerdi bu!"
 ]
 
@@ -48,7 +49,7 @@ AFKSTR = [
     "Salam mən sahibimin meneceriyəm\nBuyurun istəklərinizi mənə deyə bilərsiz. Sizin üçün sahibimə çatdıraram.",
     "Hələdə anlamadınsa burda deyiləm.",
     "Salam, uzaq mesajıma xoş gəldiniz, sizə necə kömək edə bilərəm?",
-    "Mən sahibimin xüsusi botuyam!, sizdə bot istəyirsizsə: @AlphaResmi",
+    "Mən sahibimin xüsusi botuyam!, sizdə bot istəyirsizsə: @AlphaUserBot",
     "Hal hazırda burdan çoox uzaqdayam.\nQışqırsan bəlkə eşitdim.",
     "Bu tərəfə gedirəm\n---->",
     "Bu tərəfə gedirəm\n<----",
@@ -64,7 +65,7 @@ AFKSTR = [
 UNAPPROVED_MSG = ("`Hey,` {mention}`! Bu bir bot. Narahat olma.\n\n`"
                   "`Sahibim sənə PM atma icazəsi verməyib. `"
                   "`Zəhmət olmasa sahibimin aktiv olmağını gözləyin, o adətən PM'ləri qəbul edir.\n\n`"
-                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@AlphaResmi")
+                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@AlphaUserBot")
 
 DB = connect("learning-data-root.check")
 CURSOR = DB.cursor()
@@ -119,7 +120,7 @@ def extractCommands(file):
             Alphapy = re.search('\"\"\"AlphaPY(.*)\"\"\"', FileRead, re.DOTALL)
             if not Alphapy == None:
                 Alphapy = Alphapy.group(0)
-                for Satir in Alphapy.splitlines():
+                for Satir in Alphapu.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -155,7 +156,7 @@ try:
 
     # PLUGIN MESAJLARINI AYARLAYAQ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`A L P H A  Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Sağolun Mən Getdim ✨", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`, bloklandın😊"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Alphaları Qorusun Alpha User Bot Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bura sıxıcı oldu sağolun getdim🌚", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`, Hey Sənin Mesaj yazmağıvı istəmirəm Artıq Mesaj Yazma Bloklandın!"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -185,7 +186,7 @@ try:
                 if not os.path.exists("./userbot/modules/" + plugin.file.name):
                     dosya = bot.download_media(plugin, "./userbot/modules/")
                 else:
-                    LOGS.info("Bu Plugin Onsuzda Yüklenib " + plugin.file.name)
+                    LOGS.info("Bu Plugin Onsuzda Yüklənib " + plugin.file.name)
                     extractCommands('./userbot/modules/' + plugin.file.name)
                     dosya = plugin.file.name
                     continue 
@@ -196,7 +197,7 @@ try:
 
                     spec.loader.exec_module(mod)
                 except Exception as e:
-                    LOGS.info(f"`Yükleme Uğursuz! Plugin xetalıdır.\n\nHata: {e}`")
+                    LOGS.info(f"`Yükləmə Uğursuz! Plugin xətalıdır.\n\nHata: {e}`")
 
                     try:
                         plugin.delete()
@@ -232,7 +233,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz işleyir! Hansısa söhbete  .alive yazaraq Test ede bilersiz!."
-          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/AlphaSup")
+          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/AlphaSupportaz")
 LOGS.info(f"Bot versiyası: Alpha {ALPHA_VERSION}")
 
 """
