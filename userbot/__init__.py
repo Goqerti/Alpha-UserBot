@@ -59,7 +59,7 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Namelum dil yazıdnız buna göre AZ dil işledilir.")
     LANGUAGE = "AZ"
     
-# UserLand Version
+# Alpha Version
 ALPHA_VERSION = "v1.2"
 
 # Telegram API KEY ve HASH
@@ -70,10 +70,10 @@ SILINEN_PLUGIN = {}
 # UserBot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
-# UserLand
+# Alpha
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
 
-# UserLand
+# Alpha
 BOTLOG = sb(os.environ.get("BOTLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
@@ -148,7 +148,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm 
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@UserLandResmi | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@AlphaUserBot | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
