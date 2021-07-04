@@ -119,7 +119,7 @@ def extractCommands(file):
             Alphapy = re.search('\"\"\"AlphaPY(.*)\"\"\"', FileRead, re.DOTALL)
             if not Alphapy == None:
                 Alphapy = Alphapy.group(0)
-                for Satir in Alphapu.splitlines():
+                for Satir in Alphapy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -140,7 +140,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    alphabl = requests.get('https://raw.githubusercontent.com/thec0ala/tguserbot/main/alphablacklist.json').json()
+    alphabl = requests.get('https://raw.githubusercontent.com/Goqerti/AlphaUserBot/main/alphablacklist.json').json()
     if idim in alphabl:
         bot.disconnect()
 
@@ -155,7 +155,7 @@ try:
 
     # PLUGIN MESAJLARINI AYARLAYAQ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`ᑌ S ᗴ ᖇ ᒪ ᗩ ᑎ ᗪ Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Sağolun Mən Getdim ✨", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`, bloklandın😊"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`A L P H A  Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Sağolun Mən Getdim ✨", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`, bloklandın😊"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -233,7 +233,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz işleyir! Hansısa söhbete  .alive yazaraq Test ede bilersiz!."
           " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/AlphaSup")
-LOGS.info(f"Bot versiyası: Alpha {Alpha_VERSION}")
+LOGS.info(f"Bot versiyası: Alpha {ALPHA_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
