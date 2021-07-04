@@ -70,5 +70,5 @@ async def capture(url):
                                    reply_to=message_id)
 
 CmdHelp('ss').add_command(
-    'ss', '<url>', 'Yazılan web saytından bir ekran şəkli alar və göndərər.', 'ss https://github.com/TheC0ala/UserLand'
+    'ss', '<url>', 'Yazılan web saytından bir ekran şəkli alar və göndərər.', 'ss https://github.com/Goqerti/AlphaUserBot'
 ).add()
