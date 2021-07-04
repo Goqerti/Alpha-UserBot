@@ -146,7 +146,7 @@ if __name__ == '__main__':
          AppInfo = {
             "hash": hashh,
             "app_title":"Alpha",
-            "app_shortname": "UsedLand",
+            "app_shortname": "AlphaUser",
             "app_url": "",
             "app_platform": "android",
             "app_desc": ""
