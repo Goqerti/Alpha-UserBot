@@ -8,7 +8,7 @@ from userbot.cmdhelp import CmdHelp
 
 
 @register(outgoing=True, pattern="^.ses kisi")
-async def userland(event):
+async def alpha(event):
   reply = await event.get_reply_message()
   if not reply:
     await event.edit("Bir mesaja cavab verin.")
