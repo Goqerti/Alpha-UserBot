@@ -40,7 +40,7 @@ async def userland(event):
         
         
 @register(outgoing=True, pattern="^.ses qadin")
-async def userland(event):
+async def alpha(event):
   reply = await event.get_reply_message()
   if not reply:
     await event.edit("Bir mesaja cavab verin.")
