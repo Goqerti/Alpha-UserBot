@@ -18,7 +18,7 @@ LANG = get_value("__alpha")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.bot(?: |$)(.*)")
+@register(outgoing=True, pattern="^.alpha(?: |$)(.*)")
 async def alpha(event):
     """ necesen """
     args = event.pattern_match.group(1).lower()
