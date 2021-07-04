@@ -90,7 +90,7 @@ async def cevir(event):
         await event.edit(f"`{LANG['UPLOADING_GIF']}`")
 
         try:
-            await event.client.send_file(event.chat_id, "out.gif",reply_to=rep_msg, caption=LANG['WITH_DDQ_GIF'])
+            await event.client.send_file(event.chat_id, "out.gif",reply_to=rep_msg, caption=LANG['WITH_ALPHA_GIF'])
         except:
             await event.edit(LANG['ERROR'])
             await event.delete()
@@ -112,7 +112,7 @@ async def cevir(event):
         await gif.communicate()
         await event.edit(LANG['UPLOADING_SOUND'])
         try:
-            await event.client.send_file(event.chat_id, "out.mp3",reply_to=rep_msg, caption=LANG['WITH_DDQ_SOUND'])
+            await event.client.send_file(event.chat_id, "out.mp3",reply_to=rep_msg, caption=LANG['WITH_ALPHA_SOUND'])
         except:
             await event.edit(LANG['ERROR'])
             await event.delete()
