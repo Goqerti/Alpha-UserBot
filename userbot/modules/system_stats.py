@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# UserLand - by BABAŞ
+# AlphaUserBot - by K i r i t o
 
 from asyncio import create_subprocess_shell as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
@@ -78,7 +78,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "[UserLand](https://t.me/userlanresmi)"
+            "[AlphaUserBot](https://t.me/alpharesmi)"
         )
 
 
@@ -144,7 +144,7 @@ async def amialive(e):
             PLUGIN_MESAJLAR['alive'].text = PLUGIN_MESAJLAR['alive'].text.format(
                 telethon=version.__version__,
                 python=python_version(),
-                userland=USERLAND_VERSION,
+                alpha=ALPHA_VERSION,
                 plugin=len(CMD_HELP),
                 id=me.id,
                 username='@' + me.username if me.username else f'[{me.first_name}](tg://user?id={me.id})',
@@ -165,5 +165,5 @@ CmdHelp('system_stats').add_command(
 ).add_command(
     'pip', '<modul(lar)>', 'Pip modullarında axtarış edər.'
 ).add_command(
-    'alive', None, 'UserLand\'ın işləyib işləmədiyini yoxlamaq üçündür.'
+    'alive', None, 'AlphaUserBot\'ın işləyib işləmədiyini yoxlamaq üçündür.'
 ).add()
