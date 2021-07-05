@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# USERLAND - by BABAŞ #
+# ALPHA USER BOT #
 
 from userbot.cmdhelp import CmdHelp
 from userbot import PLUGIN_CHANNEL_ID, CMD_HELP
@@ -26,13 +26,13 @@ async def dil(event):
             reply = await event.get_reply_message()
             dosya = await reply.download_media()
 
-            if ((len(reply.file.name.split(".")) >= 2) and (not reply.file.name.split(".")[1] == "ddqjson")):
-                return await event.edit("`Zəhmət olmasa keçərli` **DDQJSON** `faylı verin!`")
+            if ((len(reply.file.name.split(".")) >= 2) and (not reply.file.name.split(".")[1] == "alphajson")):
+                return await event.edit("`Zəhmət olmasa keçərli` **ALPHAJSON** `faylı verin!`")
 
             try:
                 dosya = loads(open(dosya, "r").read())
             except JSONDecodeError:
-                return await event.edit("`Zəhmət olmasa keçərli` **DDQJSON** `faylı verin!`")
+                return await event.edit("`Zəhmət olmasa keçərli` **ALPHAJSON** `faylı verin!`")
 
             await event.edit(f"`{dosya['LANGUAGE']}` `dili yüklənir...`")
             pchannel = await event.client.get_entity(PLUGIN_CHANNEL_ID)
@@ -49,15 +49,15 @@ async def dil(event):
         await event.edit("`Dil faylının məlumatları gətirilir... Zəhmət olmasa gözləyin.`")
         if event.is_reply:
             reply = await event.get_reply_message()
-            if ((len(reply.file.name.split(".")) >= 1) and (not reply.file.name.split(".")[1] == "ddqjson")):
-                return await event.edit("`Zəhmət olmasa keçərli` **DDQJSON** `faylı verin!`")
+            if ((len(reply.file.name.split(".")) >= 1) and (not reply.file.name.split(".")[1] == "alphajson")):
+                return await event.edit("`Zəhmət olmasa keçərli` **ALPHAJSON** `faylı verin!`")
 
             dosya = await reply.download_media()
 
             try:
                 dosya = loads(open(dosya, "r").read())
             except JSONDecodeError:
-                return await event.edit("`Zəhmət olmasa keçərli` **DDQJSON** `faylı verin!`")
+                return await event.edit("`Zəhmət olmasa keçərli` **ALPHAJSON** `faylı verin!`")
 
             await event.edit(
                 f"**Dil: **`{dosya['LANGUAGE']}`\n"
@@ -74,7 +74,7 @@ async def dil(event):
             f"**Dil Kodu: **`{LANGUAGE_JSON['LANGCODE']}`\n"
             f"**Çevirən: **`{LANGUAGE_JSON ['AUTHOR']}`\n"
 
-            f"\n\n@UserLandResmi ✨"
+            f"\n\n@AlphaUserBot ⚡️"
         )
 
 CmdHelp('dil').add_command(
