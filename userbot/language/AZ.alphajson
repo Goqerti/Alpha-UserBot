@@ -35,7 +35,7 @@
         
         "__alpha": {
             "NEED_PLUGIN": "Zəhmət olmasa bir Alpha modulu adı yazın.",
-            "NEED_MODULE": "Zəhmət olmasa hansı Alpha modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bot <modul adı>"
+            "NEED_MODULE": "Zəhmət olmasa hansı Alpha modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .alpha <modul adı>"
         },
 
         "__helpme": {
@@ -114,7 +114,7 @@
             "ALREADY": "`Hazırda %s onsuzda avtomatik olaraq dəyişir.`",
             "SETTING": "`%s nizamlanır...`",
             "BIO": "📅 Tarix: {tarih} | ⌚️ Saat: {saat} | ",
-            "NICK": "@AlphaResmi",
+            "NICK": "@AlphaUserBot",
             "SETTED": "`%s nizamlandı :)`",
             "NAME": "⏰%s"
         },
@@ -153,8 +153,8 @@
             "EFECTING": "`Effekt hazırlanır...`",
             "NOT_FOUND_EFECT": "**Qeyd etdiyiniz effekt tapılmadı! **`İstifadə edə biləcəyiniz effektlər: ``donma/ters/robot/earrape/parazit`",
             "NEED_VIDEO": "`Zəhmət olmasa bir videoya cavab verin!`",
-            "WITH_alpha":"@AlphaResmi `ilə effekt hazırlandı.`",
-            "WITH_alpha_GIF": "@AlphaResmi `ilə Gif'ə çevrildi.`",
+            "WITH_alpha":"@AlphaUserBot `ilə effekt hazırlandı.`",
+            "WITH_alpha_GIF": "@AlphaUserBot `ilə Gif'ə çevrildi.`",
             "CONVERTING_TO_GIF": "Gif'ə çevrilir...",
             "UPLOADING_GIF": "`Gif yüklənir...`",
             "ERROR": "Gif'ə çevirə bilmədim :("
@@ -388,7 +388,7 @@
         },
 
         "pmpermit": {
-            "BLOCKED": "`Sən mənim Sahibimin PM-sını spamlayırsan, bu mənim heç xoşuma gəlmir.`\n`Hazırda BLOKLANDIN və SPAM olaraq bildirildin, gələcəkdə dəyişiklik olmadığı ərəfəyədək..`\n@AlphaResmi",
+            "BLOCKED": "`Sən mənim Sahibimin PM-sını spamlayırsan, bu mənim heç xoşuma gəlmir.`\n`Hazırda BLOKLANDIN və SPAM olaraq bildirildin, gələcəkdə dəyişiklik olmadığı ərəfəyədək..`\n@AlphaUserBot",
             "ERROR": "PM sayğacı başını itirmiş kimidir, botu zəhmət olmasa yenidən başladın.",
             "BOTLOG_BLOCKED": " adamı sadəcə bir xəyal qırıqlığı idi. PM-nı məşğul etdiyi üçün bloklandı.",
             "NOTIFOFF": "`PM icazəsi olmayan istifadəçilərin bildirişləri səssizə alındı!`",
@@ -596,7 +596,7 @@
             "UPDATING": "`Bot yenilənir...`",
             "INVALID_APPNAME": "`[HEROKU UPDATER] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
             "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
-            "HEROKU_UPDATING": "`[HEROKU UPDATER]\nUserBot-unuzun daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 10 dəqiqə çəkir.`\n@AlphaResmi",
+            "HEROKU_UPDATING": "`[HEROKU UPDATER]\nUserBot-unuzun daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 10 dəqiqə çəkir.`\n@AlphaUserBot",
             "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
             "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n3 dəqiqə sonra .alive yazıb yoxlayın!  ...`"
         },
