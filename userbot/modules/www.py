@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ 
+# Alpha User Bot
 
 from datetime import datetime
 
