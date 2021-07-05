@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 import re
 import os
@@ -166,21 +166,21 @@ async def pins(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bot {cmdhelp}` __yazın.__')
+                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.alpha {cmdhelp}` __yazın.__')
             else:
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                userbot.cmdhelp.CmdHelp(dosya).add_warning('Komutlar bulunamadı!').add()
+                userbot.cmdhelp.CmdHelp(dosya).add_warning('Komutlar tapılmadı!').add()
                 return await event.edit(LANG['PLUGIN_DESCLESS'])
         else:
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bot {cmdhelp}` __yazın.__')
+                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.alpha {cmdhelp}` __yazın.__')
             else:
                 dosyaAdi = reply_message.file.name.replace('.py', '')
                 extractCommands(dosya)
                 await reply_message.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.bot {dosyaAdi}` __yazın.__')
+                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modulun komandaları və işlədilişi haqqında məlumat üçün__ `.alpha {dosyaAdi}` __yazın.__')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
