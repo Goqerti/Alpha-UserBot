@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# UserLand - by BABAŞ
+# Alpha User Bot / Sirvhan
 
 
 import io
