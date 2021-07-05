@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ #
+# ALPHA USER BOT #
 
 import twitter_scraper
 import os
@@ -101,8 +101,8 @@ async def reddit(event):
 @register(outgoing=True, pattern="^.karbon ?(.*)")
 async def karbon(e):
     cmd = e.pattern_match.group(1)
-    if os.path.exists("@UserLand-Karbon.jpg"):
-        os.remove("@UserLand-Karbon.jpg")
+    if os.path.exists("@Alpha-Karbon.jpg"):
+        os.remove("@Alpha-Karbon.jpg")
 
     if len(cmd) < 1:
         await e.edit("İşlədilişi: .karbon mesaj")    
@@ -113,10 +113,10 @@ async def karbon(e):
 
     r = get(f"https://carbonnowsh.herokuapp.com/?code={cmd}")
 
-    with open("@UserLand-Karbon.jpg", 'wb') as f:
+    with open("@Alpha-Karbon.jpg", 'wb') as f:
         f.write(r.content)    
 
-    await e.client.send_file(e.chat_id, file="@UserLand-Karbon.jpg", force_document=True, caption="[UserLand](https://t.me/UserLandResmi) ilə yaradıldı.")
+    await e.client.send_file(e.chat_id, file="@Alpha-Karbon.jpg", force_document=True, caption="[Alpha User Bot](https://t.me/Alphauserbot) ilə yaradıldı.")
     await e.delete()
 
 @register(outgoing=True, pattern="^.crblang (.*)")
@@ -177,7 +177,7 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Bu şəkil [UserLand](http://t.me/UserLandResmi) və [Carbon](https://carbon.now.sh/about/) işlədilərək yaradıldı,\
+        caption="Bu şəkil [Alpha User Bot](http://t.me/AlphaUserBot) və [Carbon](https://carbon.now.sh/about/) işlədilərək yaradıldı,\
         \nbir [Dawn Labs](https://dawnlabs.io/) layihəsidir.",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
@@ -352,7 +352,7 @@ async def text_to_speech(query):
         message = textx.text
     else:
         await query.edit(
-            "`Yazıdan sese çevirmek için bir metin gir.`")
+            "`Eh yazıdan səsə çevirmək üçün mətin verməlisən!.`")
         return
 
     try:
@@ -382,7 +382,7 @@ async def text_to_speech(query):
         os.remove("h.mp3")
         if BOTLOG:
             await query.client.send_message(
-                BOTLOG_CHATID, "Mətn uğurla Səsə çevrildi!")
+                BOTLOG_CHATID, "Mətn uğurla Səsə çevrildi! @AlphaUserBot")
         await query.delete()
 
 
