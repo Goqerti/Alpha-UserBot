@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# UserLand - by BABAŞ
+# Alpha User Bot
 
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.functions.messages import ReportSpamRequest
@@ -309,7 +309,7 @@ async def blockpm(block):
         replied_user = await block.client.get_entity(reply.from_id)
         if replied_user.id in BRAIN_CHECKER or replied_user.id in WHITELIST:
             await block.edit(
-                "`Yox! UserLand sahibini bloklamayacam!`"
+                "`Yox! Alpha User Bot sahibini bloklamayacam!`"
             )
             return
 
@@ -333,7 +333,7 @@ async def blockpm(block):
     else:
         if block.chat_id in BRAIN_CHECKER:
             await block.edit(
-                "`Yox! TGUserBot sahibini bloklamayacam!`"
+                "`Yox! Alpha User Bot sahibini bloklamayacam!`"
             )
             return
 
