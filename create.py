@@ -1,4 +1,4 @@
-# @c9ala - UserLand #
+# Alpha User Bot #
 
 from telethon.tl import functions
 from userbot import CMD_HELP
@@ -9,7 +9,7 @@ from userbot.events import register
 async def telegraphs(grop):
     if grop.fwd_from:
         return
-    """ UserLand - BABAŞ """
+    """ AlphaUserBot - Sirvhan """
     if not grop.text[0].isalpha() and grop.text[0] not in ("/", "#", "@", "!"):
 
         if grop.fwd_from:
@@ -64,7 +64,7 @@ async def telegraphs(grop):
                 r = await grop.client(
                     functions.channels.CreateChannelRequest(  # pylint:disable=E0602
                         title=group_name,
-                        about="@UserLandResmi ilə yaradılmış Qrup/Kanal",
+                        about="@AlphaUserBot ilə yaradılmış Qrup/Kanal",
                         megagroup=False if type_of_group == "c" else True,
                     )
                 )
