@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT #
 
 
 from random import randint
@@ -48,7 +48,7 @@ async def randomise(items):
 
 @register(outgoing=True, pattern="^.sleep( [0-9]+)?$")
 async def sleepybot(time):
-    """ .sleep komandası TGUSERBOT'u yatızdırar :) """
+    """ .sleep komandası ALPHAUSERBOT'u yatızdırar :) """
     if " " not in time.pattern_match.group(1):
         await time.reply(LANG['SLEEP_DESC'])
     else:
@@ -156,13 +156,13 @@ async def raw(event):
 CmdHelp('misc').add_command(
     'random', '<əşya1> <əşya2>', 'Yazdığınız əşyalardan random birini seçər', 'random TGUserBot Əla İşləyie'
 ).add_command(
-    'sleep', '<vaxt>', 'TGUserBot\'u yazdığınız saniyə qədər yatızdırar', 'sleep 20'
+    'sleep', '<vaxt>', 'AlphaUserBot\'u yazdığınız saniyə qədər yatızdırar', 'sleep 20'
 ).add_command(
     'shutdown', None, 'Botu Söndürər.'
 ).add_command(
-    'repo', None, 'TGUseBot\'un GitHub reposunun linki.'
+    'repo', None, 'AlphaUserBot\'un GitHub reposunun linki.'
 ).add_command(
-    'readme', None, 'TGUserBot\'un GitHub\'dakı README.md faylının linki.'
+    'readme', None, 'AlphaUserBot\'un GitHub\'dakı README.md faylının linki.'
 ).add_command(
     'creator', None, 'Bu botu kim hazırlayıb?'
 ).add_command(
