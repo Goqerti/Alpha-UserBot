@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT #
 
 
 import aiohttp
@@ -64,5 +64,5 @@ async def github(event):
                 await event.edit(REPLY)
 
 CmdHelp('git').add_command(
-    'git', '<isdifadəçi adı>', 'Hədəflənən isdifadəçinin GitHub məlumatlarını gətirər.', 'git thec0ala'
+    'git', '<isdifadəçi adı>', 'Hədəflənən isdifadəçinin GitHub məlumatlarını gətirər.', 'git Sirvhan'
 ).add()
