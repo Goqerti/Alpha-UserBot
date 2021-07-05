@@ -1,4 +1,4 @@
-# @c9ala - UserLand #
+# ALPHA USER BOT #
 
 from telethon.tl import functions
 from userbot import CMD_HELP
@@ -9,7 +9,7 @@ from userbot.events import register
 async def telegraphs(grop):
     if grop.fwd_from:
         return
-    """ UserLand - BABAŞ """
+    """ AlphaUserBot - @Sirvhan """
     if not grop.text[0].isalpha() and grop.text[0] not in ("/", "#", "@", "!"):
 
         if grop.fwd_from:
