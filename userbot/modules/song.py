@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 import datetime
 import asyncio
@@ -149,5 +149,5 @@ CmdHelp('song').add_command(
 ).add_command(
     'song', '<mahnı adı/youtube/spotify>', 'Mahnını yükləyəe.'
 ).add_command(
-    'songpl', '<spotify playlist>', 'Spotify Playlist\'indən mahnı yüklayəe'
+    'songpl', '<spotify playlist>', 'Spotify Playlist\'indən mahnı yüklayər'
 ).add()
