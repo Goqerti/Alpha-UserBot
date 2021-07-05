@@ -1,4 +1,4 @@
-# TGUSERBOT - by BABAŞ #
+# ALPHA USER BOT #
 
 import datetime
 from telethon import events
@@ -80,7 +80,7 @@ def MemeYap (Resim, Text, FontS = 40, Bottom = False, BottomText = None):
                 drawTextWithOutline(Bottom_Satirlar[i], x, y)
                 lastY = y
 
-    Foto.save("ddqname.png")
+    Foto.save("alphaname.png")
 
 @register(outgoing=True, pattern="^.sangmata(?: |$)(.*)")
 async def sangmata(event):
@@ -145,32 +145,32 @@ async def memeyap(event):
         if reply.photo:
             Resim = await reply.download_media()
         elif reply.sticker and reply.file.ext == ".webp":
-            if os.path.exists("./DDQSticker.png"):
-                os.remove("./DDQSticker.png")
+            if os.path.exists("./ALPHASticker.png"):
+                os.remove("./ALPHASticker.png")
 
             foto = await reply.download_media()
             im = Image.open(foto).convert("RGB")
-            im.save("DDQSticker.png", "png")
-            Resim = "DDQSticker.png"
+            im.save("ALPHASticker.png", "png")
+            Resim = "ALPHASticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
-            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' DDQSticker.png")
+            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' ALPHASticker.png")
             os.remove(sticker)
-            Resim = "DDQSticker.png"
+            Resim = "ALPHASticker.png"
         elif reply.media:
             Resim = await reply.download_media()
             Sure = os.system("ffmpeg -i '"+Resim+"' 2>&1 | grep Duration | awk '{print $2}' | tr -d , | awk -F ':' '{print ($3+$2*60+$1*3600)/2}'``")
-            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} DDQThumb.jpg")
+            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} ALPHAThumb.jpg")
             os.remove(Resim)
-            Resim = 'DDQThumb.jpg'
+            Resim = 'ALPHAThumb.jpg'
         else:
             return await event.edit(LANG['REPLY_TO_MEME'])
             
-        if os.path.exists("./ddqmeme.png"):
-            os.remove("./ddqmeme.png")
+        if os.path.exists("./alphameme.png"):
+            os.remove("./alphameme.png")
 
         MemeYap(Resim, Text, font, Bottom, BottomText)
-        await event.client.send_file(event.chat_id, "./ddqmeme.png", reply_to=reply)
+        await event.client.send_file(event.chat_id, "./alphameme.png", reply_to=reply)
         await event.delete()
         os.remove(Resim)
     else:
