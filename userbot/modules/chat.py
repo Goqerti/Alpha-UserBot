@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by Nurlan & BABAŞ
+# AlphaUserBot
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
@@ -142,7 +142,7 @@ async def keep_read(message):
                 await message.client.send_read_acknowledge(message.chat_id)
 
 
-# TGUSERBOT
+# AlphaUserBot
 regexNinja = False
 
 
