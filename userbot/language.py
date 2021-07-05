@@ -1,4 +1,4 @@
-# Alpha - by BABAŞ #
+# Alpha - by K I R I T O #
 
 
 from . import LANGUAGE, LOGS, bot, PLUGIN_CHANNEL_ID
