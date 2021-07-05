@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# Alpha User Bot #
 
 
 """ Dogbin ile qarşılıqlı elaqe üçün komandalara daxil olan UserBot modulu(https://del.dog)"""
