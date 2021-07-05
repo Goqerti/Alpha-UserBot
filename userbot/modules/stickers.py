@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ #
+# Alpha User Bot #
 
 import io
 import math
@@ -130,9 +130,9 @@ async def kang(event):
                     )
 
                     await event.edit(
-                        f"`Sticker {number}{'(animasyonlu)' if is_anim else ''} sayılı pakete eklendi, "
-                        f"{emoji} emojisi ile birlikte! "
-                        f"Paket `[burada](t.me/addstickers/{packname})`bulunabilinir.`",
+                        f"`Sticker {number}{'(animasyonlu)' if is_anim else ''} saylı paketə əlavə olundu, "
+                        f"{emoji} emojisi ilə birlikdə! "
+                        f"Paket `[buradan](t.me/addstickers/{packname})`tapıla bilər.`",
                         parse_mode='md')
                     return
 
@@ -185,7 +185,7 @@ async def kang(event):
     await event.edit(
         f"`Sticker {number}{'(animasyonlu)' if is_anim else ''} saylı paketə əlavə edildi, "
         f"{emoji} emojisi ilə birlikdə! "
-        f"Paket `[burada](t.me/addstickers/{packname})` tapıla bilər`",
+        f"Paket `[buradan](t.me/addstickers/{packname})` tapıla bilər`",
         parse_mode='md')
 
 
