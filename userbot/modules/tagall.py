@@ -4,14 +4,14 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# Alpha User Bot
 
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import CMD_HELP, bot
 from userbot.events import register
 from userbot.cmdhelp import CmdHelp
 
-@register(outgoing=True, pattern="^.tagherkes$")
+@register(outgoing=True, pattern="^.tagall$")
 async def _(event):
     if event.fwd_from:
         return
