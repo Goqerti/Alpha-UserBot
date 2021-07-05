@@ -1,6 +1,6 @@
 {
-  "name": "UserLand",
-  "description": "UserLand",
+  "name": "Alpha User Bot",
+  "description": "Telegramdan əyləncəli və rahat işlətmək üçün telegram user bot’u",
   "logo": "https://i.imgyukle.com/2021/02/02/HbowMj.jpg",
   "keywords": [
     "telegram",
@@ -40,7 +40,7 @@
       "required": true
     },
     "HEROKU_MEMEZ": {
-      "description": "UserBot bir Heroku Dyno üzərində işləyirsə, bu dəyər True olmalıdır.",
+      "description": "Toxunmayın!.",
       "value": "True",
       "required": true
     },
@@ -53,7 +53,7 @@
       "required": true
     },
     "UPSTREAM_REPO_URL": {
-      "description": "Fork təqdim etməyiniz vəziyyətində repo URL-nizi buraya əlavə edin. Varsayılan olaraq öz repo adresimiz yazılmışdır.",
+      "description": "Toxunmayın!.",
       "value": "https://github.com/goqerti/alphauserbot",
       "required": true
     },
@@ -176,7 +176,7 @@
       "required": false
     },
     "DEFAULT_BIO": {
-      "description": "Varsayılan profil biosu.",
+      "description": "Varsayılan profil biosu Toxunmayın!.",
       "value": "@AlphaUserBot",
       "required": false
     },
@@ -216,17 +216,17 @@
       "required": false
     },
     "PAKET_ISMI": {
-      "description": "Dızla komandası paket adını yazın. Varsayılan olaraq @UserLandResmi'dir",
+      "description": "Dızla komandası paket adını yazın. Varsayılan olaraq @AlphaUserBot'dur Toxunmamağınız tövsiyə olunur",
       "value": "@AlphaUserBot paketi",
       "required": false
     },
     "AVTO_QATILMA": {
-      "description": "Support qrupuba və Kanal'a avtomatik qatılmaq istəmirsinizsə False yazın.",
+      "description": "Toxunmayın!.",
       "value": "True",
       "required": true
     },
     "LANGUAGE": {
-      "description": "Botun dili.",
+      "description": "Botun dili Hazırki ayarda saxlayın!.",
       "value": "AZ",
       "required": true
     }
