@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 from userbot import BOT_USERNAME
 from userbot.events import register
@@ -22,7 +22,7 @@ async def yardim(event):
     if tgbotusername is not None:
         results = await event.client.inline_query(
             tgbotusername,
-            "@UserLandResmi"
+            "@Alphasupportaz"
         )
         await results[0].click(
             event.chat_id,
