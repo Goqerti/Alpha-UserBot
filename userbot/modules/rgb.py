@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 import io
 import os
@@ -49,7 +49,7 @@ async def sticklet(event):
     draw = ImageDraw.Draw(image)
     fontsize = 230
 
-    FONT_FILE = await get_font_file(event.client, "@ddqfont")
+    FONT_FILE = await get_font_file(event.client, "@alphafont")
 
     font = ImageFont.truetype(FONT_FILE, size=fontsize)
 
