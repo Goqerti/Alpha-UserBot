@@ -1,4 +1,4 @@
-# by BABAŞ #
+# Alpha User Bot
 
 import threading
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
