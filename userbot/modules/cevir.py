@@ -1,4 +1,4 @@
-# TGUSERBOT - by BABAŞ #
+# ALPHA USER BOT #
 
 from userbot import CMD_HELP
 from userbot.events import register
@@ -39,7 +39,7 @@ async def cevir(event):
 
         im = Image.open(foto).convert("RGB")
         im.save("sticker.png", "png")
-        await event.client.send_file(event.chat_id, "sticker.png", reply_to=rep_msg, caption="@UserLandResmi `ilə şəkilə çevirildi.`")
+        await event.client.send_file(event.chat_id, "sticker.png", reply_to=rep_msg, caption="@AlphaUserBot `ilə şəkilə çevirildi.`")
 
         await event.delete()
         os.remove("sticker.png")
@@ -64,7 +64,7 @@ async def cevir(event):
             indir = await rep_msg.download_media()
             ses = await asyncio.create_subprocess_shell(f"ffmpeg -i '{indir}' {KOMUT[efekt]} output.mp3")
             await ses.communicate()
-            await event.client.send_file(event.chat_id, "output.mp3", reply_to=rep_msg, caption="@UserLandResmi `ilə effekt tətbiq edildi.`")
+            await event.client.send_file(event.chat_id, "output.mp3", reply_to=rep_msg, caption="@AlphaUserBot `ilə effekt tətbiq edildi.`")
             
             await event.delete()
             os.remove(indir)
