@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT #
 
 
 """ Filter komandaları daxil olmaqla UserBot modulu """
@@ -66,7 +66,7 @@ def split_quotes(text: str):
 
 @register(incoming=True, disable_edited=True, disable_errors=True)
 async def filter_incoming_handler(handler):
-    """ TGUSERBOT """
+    """ ALPHAUSERBOT """
     try:
         if not (await handler.get_sender()).bot:
             try:
