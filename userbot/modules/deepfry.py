@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT #
 
 import io
 from random import randint, uniform
@@ -42,7 +42,7 @@ async def deepfryer(event):
         await event.edit(LANG['REPLY_PHOTO'])
         return
 
-    # TGUSERBOT
+    # ALPHA USER BOT
     await event.edit(LANG['MEDIA_DOWNLOADING'])
     image = io.BytesIO()
     await event.client.download_media(data, image)
