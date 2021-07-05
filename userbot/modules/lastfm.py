@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOR - by BABAŞ
+# ALPHA USER BOT
 
 
 from asyncio import sleep
