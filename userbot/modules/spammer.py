@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 
 import asyncio
@@ -114,5 +114,5 @@ CmdHelp('spammer').add_command(
 ).add_command(
     'delayspam', '<gecikmə> <miqdar> <mətn>', 'Verilən miqdar və verilən gecikmə ilə gecikməli spam edər.'
 ).add_warning(
-    'Məsuliyyət sizə aiddir!!'
+    'Diqqət Siz Spam həyata keçirərkən hesabınızın limitə düşmə riskini gözə alırsınız bundan Alpha User Bot komandası məsuliyət daşımır!!'
 ).add()
