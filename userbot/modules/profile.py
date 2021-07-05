@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT
 
 import os
 from telethon.errors import ImageProcessFailedError, PhotoCropSizeSmallError
@@ -119,7 +119,7 @@ async def count(event):
     bc = 0
     b = 0
     result = ""
-    await event.edit("`Lütfen bekleyin..`")
+    await event.edit("`Zəhmət Olmasa gözləyiniz..`")
     dialogs = await bot.get_dialogs(limit=None, ignore_migrated=True)
     for d in dialogs:
         currrent_entity = d.entity
