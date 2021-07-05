@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by BABAŞ
+# ALPHA USER BOT #
 
 
 """ Hash ve encode/decode hell etme komandaları üçün UserBot modulu. """
