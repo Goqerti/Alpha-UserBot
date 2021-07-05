@@ -1,6 +1,4 @@
-# @c0aIa #
-# by BABAŞ #
-# Alpha STR #
+# Alpha STRİNG #
 
 
 import asyncio
