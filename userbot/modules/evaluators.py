@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOR - by BABAŞ
+# ALPHA USER BOT #
 
 
 """ Telegram'dan kod ve terminal komandalarını yeritmek üçün UserBot modulu. """
@@ -200,7 +200,7 @@ async def terminal_runner(term):
 CmdHelp('evaluators').add_command(
     'eval', '<əməliyyat', 'Kiçik ifadələri dəyərləndirin.', 'eval 2+3'
 ).add_command(
-    'exec', '<python kodu>', 'Kiçik Python komanlarını işə salın.', 'exec print(\"TGUSERBOT🦈!\")'
+    'exec', '<python kodu>', 'Kiçik Python komanlarını işə salın.', 'exec print(\"ALPHAUSERBOT🐺!\")'
 ).add_command(
     'term', '<əməliyyat>', 'Serverinizdəki bash komandaları vs komanda fayllarını işə salar.', 'term ls'
 ).add()
