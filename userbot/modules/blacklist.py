@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# TGUSERBOT - by Nurlan
+# Alpha User Bot
 
 import io
 import re
