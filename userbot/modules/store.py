@@ -1,4 +1,4 @@
-# UserLand - Babaş #
+# Alpha User Bot / Sirvhan #
 
 
 
@@ -28,14 +28,14 @@ async def magaza(event):
     split = plugin.split()
     if plugin == '':
         plugin = 'Son Yüklənən'
-        plugins = await event.client.get_messages('@alphauserbotplugin', limit=15, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@alphapluginaz', limit=15, filter=InputMessagesFilterDocument)
     elif len(split) >= 1 and (split[0] == 'random' or split[0] == 'rastgele'):
         plugin = 'Random'
-        plugins = await event.client.get_messages('@alphauserbotplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@alphapluginaz', limit=None, filter=InputMessagesFilterDocument)
         plugins = sample(plugins, int(split[1]) if len(split) == 2 else 5)
     else:
-        plugins = await event.client.get_messages('@alphauserbotplugin', limit=None, search=plugin, filter=InputMessagesFilterDocument)
-        random = await event.client.get_messages('@alphauserbotplugin', limit=None, filter=InputMessagesFilterDocument)
+        plugins = await event.client.get_messages('@alphapluginaz', limit=None, search=plugin, filter=InputMessagesFilterDocument)
+        random = await event.client.get_messages('@alphapluginaz', limit=None, filter=InputMessagesFilterDocument)
         random = choice(random)
         random_file = random.file.name
 
@@ -65,7 +65,7 @@ async def sinstall(event):
         return await event.edit('**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n**⚠️ Xəta:** `Zəhmət olmasa sadəcə rəqəm yazın. Əgər plugin axtarmaq istəyirsinizsə .store komandasını işlədin.`')
     
     await event.edit('**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n`🔎 Plugin\'i gətirirəm... Biraz gözlə.`')
-    plugin = await event.client.get_messages('@AlphaUserBotplugin', ids=plugin)
+    plugin = await event.client.get_messages('@Alphapluginaz', ids=plugin)
     await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n`✅ {plugin.file.name} plugini gətirildi!`\n`⬇️ Plugini yükləyirəm... Biraz gözləyin.`')
     dosya = await plugin.download_media('./userbot/modules/')
     await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n`✅ {plugin.file.name} yükləmə uğurludur!`\n`⬇️ Plugini yükləyirəm... Biraz gözləyin.`')
@@ -96,7 +96,7 @@ async def sinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modul haqqında məlumat üçün__ `.bot {cmdhelp}` __yazın.__')
+                return await event.edit(f'**Modul uğurla yükləndi!**\n__Modul haqqında məlumat üçün__ `.alpha {cmdhelp}` __yazın.__')
             else:
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
                 userbot.cmdhelp.CmdHelp(dosya).add_warning('Komanda tapıla bilmədi!').add()
@@ -105,12 +105,12 @@ async def sinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n**✅ Modul uğurla yükləndi**\n__ℹ️ Modul haqqında məlumat üçün__ `.bot {cmdhelp}` __yazın.__')
+                return await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n**✅ Modul uğurla yükləndi**\n__ℹ️ Modul haqqında məlumat üçün__ `.alpha {cmdhelp}` __yazın.__')
             else:
                 dosyaAdi = plugin.file.name.replace('.py', '')
                 extractCommands(dosya)
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n**✅ Modul uğurla yükləndi!**\n__ℹ️ Modul haqqında məlumat üçün__ `.bot {dosyaAdi}` __yazın.__')
+                return await event.edit(f'**AlphaUserBot Plugin Mağazası**\n__Versiyon 1.0__\n\n**✅ Modul uğurla yükləndi!**\n__ℹ️ Modul haqqında məlumat üçün__ `.alpha {dosyaAdi}` __yazın.__')
 
 userbot.cmdhelp.CmdHelp('store').add_command(
     'store', '<söz>', 'Plugin kanalına atılan son pluginləri gətirər. Əgər söz yazsanız plugin kanalında axtarış edər.'
