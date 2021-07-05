@@ -156,7 +156,7 @@ try:
 
     # PLUGIN MESAJLARINI AYARLAYAQ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Alphaları Qorusun Alpha User Bot Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bura sıxıcı oldu sağolun getdim🌚", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`, Hey Sənin Mesaj yazmağıvı istəmirəm Artıq Mesaj Yazma Bloklandın!"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Tanrı Alphaları Qorusun Alpha User Bot Əla İşləyir ⚡️`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bura sıxıcı oldu sağolun getdim🌚", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`Bloklandın!🥰"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
