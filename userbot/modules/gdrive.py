@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 
-# UserLand - by BABAŞ #
+# ALPHA USER BOT #
 
 import asyncio
 import math
@@ -214,7 +214,7 @@ async def show_current_gdrove_folder(event):
     if parent_id:
         folder_link = f"https://drive.google.com/drive/folders/" + parent_id
         await event.edit(
-            f"UserBot'um qovluqları [buraya]({folder_link}) uploadlanır.")
+            f"UserBot'un qovluqları [buraya]({folder_link}) uploadlanır.")
     else:
         await event.edit(
             f"UserBot'um faylları Google Drive'ın kökünə uploadlayır.\
