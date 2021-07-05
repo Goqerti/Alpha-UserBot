@@ -747,7 +747,7 @@ async def rm_deletedacc(show):
 
     if del_a > 0:
         del_status = f"**{del_u}** {LANG['DELETED']} \
-        \n**{del_a}** tane silinmiş olan yönetici hesapları çıkartılamadı"
+        \n**{del_a}** ədəd silinmiş admin hesablar çıxardıla bilinmədi"
 
     await show.edit(del_status)
     await sleep(2)
