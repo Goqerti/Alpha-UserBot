@@ -1,5 +1,4 @@
-# @C0alaa #
-# Burdan nəysə əkən ermənidi #
+# Alpha User Bot
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
