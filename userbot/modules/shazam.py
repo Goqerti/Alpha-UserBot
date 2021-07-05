@@ -1,4 +1,4 @@
-# UserLand - Babaş #
+# Alpha User Bot
 
 from pydub import AudioSegment
 from json import dumps
