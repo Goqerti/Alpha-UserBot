@@ -363,10 +363,10 @@
             "GOODMORNIN_YALL": "`Sabahınız xeyir!`",
             "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
             "RESTARTING": "`Bot yenidən qoşulur..`",
-            "SUPPORT_GROUP": "[Buradan](http://t.me/Alphasup) Dəstək qrupumuza çata bilərsiniz.",
-            "CREATOR": "Bu bot \n[Babaş](https://t.me/c0alaa) tərəfindən hazırlanmışdır. \n",
-            "README": "[Alpha README.md](https://github.com/thec0ala/Alpha/blob/main/README.md)",
-            "REPO": "[Alpha Repo](https://github.com/thec0ala/Alpha)",
+            "SUPPORT_GROUP": "[Buradan](http://t.me/Alphasupportaz) Dəstək qrupumuza çata bilərsiniz.",
+            "CREATOR": "Bu bot \n[Şirvan](https://t.me/Shirvan) tərəfindən hazırlanmış \nDEVELOPERİ [ᴅ ᴛ ᴏ̈ ¦ K i r i t o🇦🇿⃤](https://t.me/abbasov1o. \n",
+            "README": "[Alpha README.md](https://github.com/Goqerti/AlphaUserBot/blob/main/README.md)",
+            "REPO": "[Alpha Repo](https://github.com/Goqerti/AlphaUserBot)",
             "CHECK_LOGS": "`Tapılmış Mesaj üçün istifadəçi qeydlərini yoxlayın!`"
         },
 
@@ -598,7 +598,7 @@
             "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
             "HEROKU_UPDATING": "`[HEROKU UPDATER]\nUserBot-unuzun daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 10 dəqiqə çəkir.`\n@AlphaResmi",
             "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
-            "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n Yenidən yüklənir ...`"
+            "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n3 dəqiqə sonra .alive yazıb yoxlayın!  ...`"
         },
 
         "upload_download": {
