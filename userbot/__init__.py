@@ -88,7 +88,7 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 # Yenileme üçün repo linki
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Goqerti/AlphaUserBot.git")
+    "https://github.com/Goqerti/Alpha-UserBot.git")
 
 # Konsol gündeliy
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
