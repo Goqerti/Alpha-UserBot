@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://imgyukle.com/f/2021/07/05/nAd3s.jpg" width="200" height="200">
+  <img src="https://telegra.ph/file/445520952055fb8e8e7f0.jpg" width="200" height="200">
   <h1>AlphaUserBot</h1>
 </div>
 <p align="center">
