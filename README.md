@@ -29,7 +29,7 @@ STRING: Termux yükləyin və yapışdırın: ```bash <(curl -L https://t.ly/Bht
 
 Botu necə quracağınızı bilmirsizsə Support qrupuna yazın: [Alpha Support](https://t.me/alphasupportaz)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Goqerti/AlphaUserBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Goqerti/Alpha-UserBot)
 ### Çətin Yol
 ```python
 git clone https://github.com/Goqerti/AlphaUserBot.git
