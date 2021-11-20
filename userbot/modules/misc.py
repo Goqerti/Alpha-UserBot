@@ -154,7 +154,7 @@ async def raw(event):
             caption="`Həll Olunan Mesaj`")
 
 CmdHelp('misc').add_command(
-    'random', '<əşya1> <əşya2>', 'Yazdığınız əşyalardan random birini seçər', 'random TGUserBot Əla İşləyie'
+    'random', '<əşya1> <əşya2>', 'Yazdığınız əşyalardan random birini seçər', 'random AlphaUserBot Əla İşləyir'
 ).add_command(
     'sleep', '<vaxt>', 'AlphaUserBot\'u yazdığınız saniyə qədər yatızdırar', 'sleep 20'
 ).add_command(
