@@ -48,7 +48,7 @@ Botla hər hansı probleminiz, istək/irad olarsa [dəstək qrupuna](https://t.m
     User Botu quraraq bunu tesdiqlemiş olursunuz.
 ```
 
-## Credit
+## Credits
 Thanks for;
 
 [Seden UserBot](https://github.com/TeamDerUntergang/Telegram-UserBot)
