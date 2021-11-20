@@ -141,7 +141,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    alphabl = requests.get('https://raw.githubusercontent.com/Goqerti/AlphaUserBot/main/alphablacklist.json').json()
+    alphabl = requests.get('https://raw.githubusercontent.com/Goqerti/Alpha-UserBot/main/alphablacklist.json').json()
     if idim in alphabl:
         bot.disconnect()
 
