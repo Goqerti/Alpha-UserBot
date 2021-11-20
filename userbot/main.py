@@ -197,7 +197,7 @@ try:
 
                     spec.loader.exec_module(mod)
                 except Exception as e:
-                    LOGS.info(f"`Yükləmə Uğursuz! Plugin xətalıdır.\n\nHata: {e}`")
+                    LOGS.info(f"`Yükləmə Uğursuz! Plugin xətalıdır.\n\nXəta: {e}`")
 
                     try:
                         plugin.delete()
