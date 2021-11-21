@@ -1,7 +1,7 @@
 {
   "name": "Alpha User Bot",
   "description": "Telegramdan əyləncəli və rahat işlətmək üçün telegram user bot’u",
-  "logo": "https://imgyukle.com/f/2021/07/05/nAd3s.jpg",
+  "logo": "https://telegra.ph/file/445520952055fb8e8e7f0.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -10,7 +10,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/goqerti/alphauserbot",
+  "repository": "https://github.com/goqerti/alpha-userbot",
   "website":   "",
   "success_url": "https://t.me/alphauserbot",
   "stack": "container",
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Toxunmayın!.",
-      "value": "https://github.com/goqerti/alphauserbot",
+      "value": "https://github.com/goqerti/alpha-userbot",
       "required": true
     },
     "COUNTRY": {
