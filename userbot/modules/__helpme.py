@@ -2,7 +2,8 @@
 #
 # Licensed under the GPL-3.0 License;
 # you may not use this file except in compliance with the License.
-#
+#Ə K M Ə 
+#P E Y S Ə R
 
 # ALPHA USER BOT
 
