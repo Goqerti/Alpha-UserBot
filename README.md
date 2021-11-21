@@ -47,6 +47,11 @@ Botla hər hansı probleminiz, istək/irad olarsa [dəstək qrupuna](https://t.m
     Biz heç bir mesuliyyet daşımırıq bütün mesuliyyet sizdedir.
     User Botu quraraq bunu tesdiqlemiş olursunuz.
 ```
+## Diqqət
+```
+   Reponu götürmək qəti qadağandır əksi təqdirdə söyüşlərin sahibi olarsız:)
+```
+
 
 ## Credits
 Thanks for;
