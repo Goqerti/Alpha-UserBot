@@ -51,7 +51,7 @@ Botla hər hansı probleminiz, istək/irad olarsa [dəstək qrupuna](https://t.m
 ```
    Reponu götürmək qəti qadağandır əksi təqdirdə söyüşlərin sahibi olarsız:)
 ```
-
+Söyüşləri bir başa görmək üçün :) [Klik et](https://github.com/Goqerti/Alpha-UserBot/blob/main/userbot/oxu.txt)
 
 ## Credits
 Thanks for;
