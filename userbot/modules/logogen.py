@@ -84,7 +84,7 @@ async def logo_gen(event):
         await event.client.send_file(
             event.chat_id,
             file=fayladi,
-            caption=f"[ALPHA USER BOT](https://t.me/alphauserbot) `sizin üçün logo hazırladı🐺`",
+            caption=f"[Alpha User Bot](https://t.me/alphauserbot) `sizin üçün logo hazırladı🐺`",
             force_document=True,
         )
         os.remove(fayladi)
