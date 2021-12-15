@@ -187,6 +187,12 @@ SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
 PAKET_ISMI = os.environ.get("PAKET_ISMI", "@AlphaUserBot Paketi")
 
+BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
+
+if not BLACKLIST_CHAT: #Əgər ayarlanıbsa Alpha support qrupu əlavə olunur.
+    BLACKLIST_CHAT = [1199531068]
+
+
 # Avto qatılma
 AVTO_QATILMA = sb(os.environ.get("AVTO_QATILMA", "True"))
 
