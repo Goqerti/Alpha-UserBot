@@ -65,7 +65,7 @@ AFKSTR = [
 UNAPPROVED_MSG = ("`Hey,` {mention}`! Bu bir bot. Narahat olma.\n\n`"
                   "`Sahibim sənə PM atma icazəsi verməyib. `"
                   "`Zəhmət olmasa sahibimin aktiv olmağını gözləyin, o adətən PM'ləri qəbul edir.\n\n`"
-                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@AlphaUserBot")
+                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@AlphaUserBot Quraraq sənində belə bir botun ola bilər :)")
 
 DB = connect("learning-data-root.check")
 CURSOR = DB.cursor()
@@ -156,7 +156,7 @@ try:
 
     # PLUGIN MESAJLARINI AYARLAYAQ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`Alpha User Bot İşləyir⚡`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye Bye Mən getdim😎`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention}`, mənə mesaj yazmağın üçün icazə verildi", "disapprove": "{mention}`, artıq mənə yaza bilməssən!`", "block": "{mention}`Bloklandın!🥰"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`Alpha User Bot İşləyir🐺`", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye Bye Mən getdim :)`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention} `mənə mesaj yazmağın üçün icazə verildi`", "disapprove": "{mention} `artıq mənə yaza bilməssən!`", "block": "{mention}`Bloklandın!🥰`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -172,7 +172,7 @@ try:
             else:
                 PLUGIN_MESAJLAR[mesaj] = dmsj
     if not PLUGIN_CHANNEL_ID == None:
-        LOGS.info("Pluginler Yüklenir...")
+        LOGS.info("`Pluginler Yüklenir...`")
         try:
             KanalId = bot.get_entity(PLUGIN_CHANNEL_ID)
         except:
