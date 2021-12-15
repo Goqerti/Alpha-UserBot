@@ -156,7 +156,7 @@ try:
 
     # PLUGIN MESAJLARINI AYARLAYAQ
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`🐺Alpha User Bot İşləyir🐺`\n👤 `Mənim Sahibim:` {mention}\n🐍 `Python:`{python}\n♻️ `Telethon:`{telethon}\n🐺 `Alpha Versiyası:` {alpha}\n🎴 `Vəziyyət: Stabil`\n`Dəstək qrupumuza` [qatıl 😻](https://t.me/alphasupportaz)", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye Bye Mən getdim :)`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention} `mənə mesaj yazmağın üçün icazə verildi`", "disapprove": "{mention} `artıq mənə yaza bilməssən!`", "block": "{mention}`Bloklandın!🥰`"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "`🐺Alpha User Bot İşləyir🐺`\n\n👤 `Mənim Sahibim:` {mention}\n\n🐍 `Python:`{python}\n\n♻️ `Telethon:`{telethon}\n\n🐺 `Alpha Versiyası:` {alpha}\n\n🎴 `Vəziyyət: Stabil`\n\n`Dəstək qrupumuza` [qatıl 😻](https://t.me/alphasupportaz)", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye Bye Mən getdim :)`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, səssizləşdirildi!`", "approve": "{mention} `mənə mesaj yazmağın üçün icazə verildi`", "disapprove": "{mention} `artıq mənə yaza bilməssən!`", "block": "{mention}`Bloklandın!🥰`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
